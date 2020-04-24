@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lecture 4a forms& frames (forms)</title>
+<meta name="description"content="4a Forms"/>
+</head>
+<body>
+<p>
+<small><big>T</big>his is a simple login form showing the implementation of various form elements and attributes as taught.
+the mail is set to be sent to the author of the page.</small></p>
+<p>
+<form method="post"action="mailto:http://mathewdrucker@gmail.com"name="login"> 
+Name:	<input type="text"placeholder="Mr.Smith"><br/>
+Email:  <input type="mail"placeholder="example@xmail.com"><br/>
+Phone:	<input type="telephone"placeholder="07xxxxxxx"><br/>
+Password:<input type="password"><br/>
+Gender: <input type="radio"value="male"name="gender" checked>Male <input type="radio"value="female"name="gender">Female<br/>
+
+<input type="reset"> &nbsp <input type="submit">
+</form>
+</p>
+<p>
+<small>This is a simple online questionnaire showing the implementation of the various form elements and their attributes.</small>
+<form name="medical record"method="post"action="mailto:https://mathewdrucker@gmail.com" border="1px">
+Name:<input type="text" placeholder="Mrs.Smith" required><br/>
+age: &nbsp <input type="integer" required><br/>
+<!--Group: <input type="radio"name="age"value="minor"checked>Minor
+<input type="radio"name="age"value="teenager">teenager
+<input type="radio"name="age"value="youth">youth
+<input type="radio"name="age"value="old">Old<br/>-->
+Phone: <input type="integer"required> <br/>
+marital-status:
+married <input type="radio" name="marital"value="married" checked>
+Engaged <input type="radio" name="marital"value=-"engaged">
+Single <input type="radio" name="marital"value="Single">
+<br/>
+Occupation:
+Unemployed <input type="checkbox" name="job" checked>
+Student<input type="checkbox"name="job">
+Employed<input type="checkbox"name="job">
+Self-employed<input type="checkbox"name="job"><br/>
+<input type="reset"> &nbsp <input type="submit"><br/>
+</form>
+</body>
+</html>

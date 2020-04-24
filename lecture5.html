@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lecture5 HTML Images</title>
+<meta name="description" content="images,image hyperlinks(hotspots),image maps"/>
+</head>
+<body>
+<img src="images/pc.png" width="300px" height="300px" border="2px"alt="image of an early model computer"align="left"hspace="25px"vspace="10px"/>
+<img src="images/me.jpg"width="300px" height="300px" border="1px"alt="a hooded silhouttee"hspace="10px"vspace="5px" align="right"/>
+<p>This webpage it is going to be all images: image tag should be almost exhaustively disccussed:
+ The key topics to be handled are:-<br/></p>
+<ul type="square">
+<li>Basic image element and attributes</li>
+<li>Images as hyperlinks(hotspots)</li>
+<li>Image maps</li>
+<ul>
+<h6>Basic image</h6>
+The two images one aligned right and left are examples of basic images<br/>
+They have specified height,width,hspace and vspace. A border has also been added to them.They also have an alternative text for bowsers with no support for images or where images are disabled.
+<pre>
+< img src = "url" width ="" height ="" alt ="Text|String">
+</pre> 
+<hr/>
+<h6>hotspots</h6>
+The following images are hotspots to my other webpages and one to external websites<br/>
+This is possible by using the image tag within an anchor tag i.e
+<pre>
+< a href = "url" >< img src ="img url" / >< /a>
+</pre>
+<table>
+<tr>
+<td valign="top"><a href="First.html"><img src="images/grinch.jpg"width="200px"height="200px"alt="grinch cartoon photo"/></a>First Webpage</td>
+<td><a href="lecture2.html"><img src="images/bood.jpg"width="200px"height="200px"alt="hood with binaries"hspace="5px"/></a>lecture2</td>
+<td><a href="lecture3.html"><img src="images/rey.jpg"width="200px"height="200px"alt="coding coffee picture"/></a>lecture3</td>
+<td><a href="lecture4b.html"><img src="images/fibbonacci.jpg"width="200px"height="200px"alt="clock spiral picture"hspace="5px"></a>lecture4</td>
+<td><a href="lecture4d.html"><img src="images/bin.jpg"width="200px"height="200px"alt="binaries"/></a>lecture5</td>
+<td><a href="http://www.google.com"><img src="images/nara.png"width="200px"height="200px"alt="A logo"hspace="5px"/></a>google.com</td>
+</tr>
+</table>
+<small>*n/b For this section view fullscreen on  desktop mode for optimum view</small>
+<h6>image maps</h6>
+Normal webpage stored in gif or jpg format, an image with a clickable area<br/>
+<ul type="none">
+<li>components of the image map</li>
+<ol type="a">
+<li>image</li>
+<li>set of map data</li>
+<li>HTML host entry</li>
+</ol><br/>
+<li>types of image-mapping</li>
+<ul type="circle">
+<li>server-sided mapping : Older and more compatible with web browsers</ll>
+<li>client-sided mapping : newer <center>Requires 2 elements<ul><li>graphical map provided by the < img > tag</li><li>instruction code provided by the < map > tag</li></center> </li>
+</ul>
+</ul>
+<center><img src="images/ol.jpg" alt="puppy=" usemap="#planmap" width="300px"height="300px;"/></center>
+<map name="planmap">
+<area shape="rect" coords="0,0,80,160" alt="main page" href="lecture4b.html"/>
+<area shape="circle" coords="20,90,170,260" alt="content page" href="lecture4d.html"/>
+<area shape="circle" coords="30,120,270,380"alt="images"href="lecture3.html"/>
+</map>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+<title>Body tags Lecture3</title>
+<meta name="keywords" content="body lists tables">
+<meta name="description" content="HTML body tags and its contents">
+</head>
+<nav>
+ <a href="#head">User</a>
+ <a href="#intro">Home</a>
+ <a href="#leisure">Hobbies</a>
+ <a href="#academia">Academics</a>
+</nav>
+<body bgcolor="#ddd"text="blue" >
+<div id="head">
+<h3>Student</h3>
+
+<pre>
+Name:	Barasa Mathews Wafula
+School: School of Computing and Mathematics 
+Reg:	BCSC01/0043/2018
+Unit:	Internet Application Programming
+</pre>
+<img src="images/me.jpg" width="200" height="200" border="2px" align="right"alt="a hooded dark silhouttee of a man"/><br/>
+</div>
+<div id="intro"><h4>About</h4>
+This is an internet application programming exercise testing the imlementation of HTML tags<br/>
+Within this page are some of the HTML tags,elements and their attributes implemented.<br/>
+<ol type="a" start="4">
+<dt>HTML tag</dt>
+<dd>Special HTML keywords enclosed in angle brackets</dd>
+<dt>HTML element</dt>
+<dd>opening and closing tags with everything enclosed within them</dd>
+<dt>HTML attributes</dt>
+<dd>special words that provide definition and more inforamation about the HTML elements</dd>
+</ol>
+</div>
+<div id="leisure">
+<h5>Content</h5>
+This website being about me below is a nested list of some of my  preferences for leisure time 
+<img src="images/pc.png"width=320px height=320px alt="an early generation model computer"align="right"border="1px"/>
+<ul type="square">
+<li>Drinks</li>
+ <ul type="circle">
+	<li>Beer</li>
+	<li>Milk</li>
+	<li>Coffee</li>
+ </ul>
+<li>Movies</li>
+	<ol type="i">
+	<li>Thriller</li>
+	<li>Crime/Drama</li>
+	<li>Adventure</li>
+	</ol>
+<li>Games</li>
+	<ul type="none">
+	<li>PubG</li>
+	<li>Asphalt Nitro</li>
+	<li>Just Cause</li>
+	</ul>
+</ul>
+
+</div>
+<div id="academia">
+<h6>Academics</h6>
+<p>This being the second semester of the second year the computer science students in the university are expected to handle the units below:</p>
+
+<table bgcolor="rgb(60,15,160)"border="1px">
+<caption align="bottom"><u><i>Semester units</i></u></caption>
+<th><tr><td colspan="2">UNIT CODE</td><td colspan="2">UNIT NAME</td></tr></th>
+<tr><td align="left">BCIT 1208</td><td colspan="2" align="right">COMPUTER NETWORKS</td></tr>
+<tr><td align="left">BCIT 2217</td><td colspan="2"align="right">OBJECT ORIENTED PROGRAMMING</td></tr>
+<tr><td align="left">BCIT 2218</td><td colspan="2"align="right">INTERNET APPLICATION PROGRAMMING</td></tr>
+<tr><td align="left">BCSC 2207</td><td colspan="2"align="right">SCIENTIFIC COMPUTING</td></tr>
+<tr><td align="left">BCSC 2252</td><td colspan="2"align="right">ASSEMBLY LANGUAGE PROGRAMMING</td></tr>
+<tr><td align="left">BMAT 2111</td><td colspan="2"align="right">CALCULUS II</td></tr>
+<tr><td align="left">BSTA 2104</td><td colspan="2"align="right">PROBABILITY & STATISTICS II</td></tr>
+</table>
+
+<br/>
+</div>
+<div id="Contacts"><h6>Contacts</h6>
+<form method="post"action="http://mailto:mathewdrucker@gmail.com" name="contacts">
+Name<input type="text"placeholder="Mr.Smith"required/><br/>	
+Phone<input type="text"placeholder="+254xxxxxx"required/><br/>
+Email<input type="mail"placeholder="example@xmail.com"required/><br/>
+<input type ="submit"/><br/><input type="reset">
+</form>
+</div>
+</body>
+</html>
